@@ -1,0 +1,9 @@
+{% extends "base.html.twig" %}
+{% block body %}
+    <ul>
+        {% for item in result %}
+            <li>{{ item | raw }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
