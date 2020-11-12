@@ -40,7 +40,7 @@ class DecoratorController extends AbstractController
         return $this->render(
             'pattern/single.html.twig',
             [
-                'result' =>$this->result
+                'result' => $this->result
             ]
         );
     }
