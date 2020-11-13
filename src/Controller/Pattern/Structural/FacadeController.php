@@ -21,12 +21,12 @@ class FacadeController extends AbstractController
     public function index()
     {
         $video = new YoutubeDownloader("api");
-        $video->downloadVideo("https://youtube.com/video");
+        $link = $video->downloadVideo("https://youtube.com/video", "Youtube title");
 
         return $this->render(
             'pattern/single.html.twig',
             [
-                'result' => ['Video has been downloaded']
+                'result' => [$link]
             ]
         );
     }
