@@ -9,3 +9,4 @@ STRUCTURAL PATTERNS
 CREATIONAL PATTERNS
 ---
 - Builder - /creational/builder
+- Factory Method - /creational/factoryMethod
