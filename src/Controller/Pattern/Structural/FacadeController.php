@@ -3,10 +3,6 @@ declare(strict_types=1);
 
 namespace App\Controller\Pattern\Structural;
 
-use App\Pattern\Structural\Adapter\EmailNotification;
-use App\Pattern\Structural\Adapter\Notification;
-use App\Pattern\Structural\Adapter\SlackApi;
-use App\Pattern\Structural\Adapter\SlackNotification;
 use App\Pattern\Structural\Facade\YoutubeDownloader;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -21,7 +17,7 @@ class FacadeController extends AbstractController
     public function index()
     {
         $video = new YoutubeDownloader("api");
-        $link = $video->downloadVideo("https://youtube.com/video", "Youtube title");
+            $link = $video->downloadVideo("https://youtube.com/video", "Youtube title");
 
         return $this->render(
             'pattern/single.html.twig',

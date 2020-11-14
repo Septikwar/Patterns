@@ -21,9 +21,9 @@ class FFMpegVideo
     }
 
     /**
-     * @return string
+     * @return void
      */
-    public function filters(): string {
-        return "Apply filters";
+    public function filters(): void {
+        echo "Apply filters<br>";
     }
 }

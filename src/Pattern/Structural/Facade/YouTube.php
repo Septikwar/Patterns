@@ -22,20 +22,20 @@ class YouTube
 
     /**
      * @param string $url
-     * @return string
+     * @return void
      */
-    public function fetchVideo(string $url): string
+    public function fetchVideo(string $url): void
     {
-        return "Fetching video metadata from {$url}";
+        echo "Fetching video metadata from {$url}<br>";
     }
 
     /**
      * @param string $path
      * @param string $title
-     * @return string
+     * @return void
      */
-    public function saveAs(string $path, string $title): string
+    public function saveAs(string $path, string $title): void
     {
-        return "Saving video file \"{$title}\" to path {$path}";
+        echo "Saving video file \"{$title}\" to path {$path}<br>";
     }
 }
